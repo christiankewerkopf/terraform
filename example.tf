@@ -8,3 +8,8 @@ resource "aws_instance" "example" {
   ami           = "ami-ede2e889"
   instance_type = "t2.micro"
 }
+
+resource "aws_key_pair" "terraform" {
+  key_name   = "terraform_admin"
+  public_key = ""
+}
